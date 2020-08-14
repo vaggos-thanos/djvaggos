@@ -16,7 +16,6 @@
     "ffmpeg-static": "^4.2.6",
     "lyrics-finder": "^21.2.1",
     "nodemon": "^2.0.4",
-    "opuscript": "^0.3.2",
     "opusscript": "0.0.7",
     "simple-youtube-api": "^5.2.1",
     "soundcloud-downloader": "^0.1.3",
