@@ -5,7 +5,7 @@ require('dotenv').config();
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-const {  PREFIX } = require("./config.json");
+const { PREFIX } = require("./config.json");
 const TOKEN = process.env.TOKEN;
 
 const client = new Client({ disableMentions: "everyone" });
@@ -21,7 +21,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
  * Client Events
  */
 client.on("ready", () => {
-  console.log(`Singed in as ${client.user.tag}!`);
+  console.log(`${client.user.username} ready!`);
   client.user.setActivity(`${PREFIX}help`);
 });
 client.on("warn", (info) => console.log(info));

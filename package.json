@@ -1,27 +1,31 @@
 {
   "name": "dj_vaggos",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.7.0",
+  "description": "Discord music bot built with discord.js",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+  "author": "Vaggos discord: vaggos#1766",
+  "private": true,
+  "homepage": "https://github.com/eritislami/evobot",
+  "repository": "github:eritislami/evobot",
+  "engines": {
+    "node": ">=12.0.0"
   },
-  "keywords": [
-    "music"
-  ],
-  "author": "Vaggos",
-  "license": "ISC",
   "dependencies": {
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.6",
-    "lyrics-finder": "^21.1.1",
+    "lyrics-finder": "^21.2.1",
     "nodemon": "^2.0.4",
+    "opuscript": "^0.3.2",
     "opusscript": "0.0.7",
     "simple-youtube-api": "^5.2.1",
     "soundcloud-downloader": "^0.1.3",
+    "string-progressbar": "^1.0.1",
     "ytdl-core": "^3.2.1",
     "ytdl-core-discord": "^1.2.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   }
 }
