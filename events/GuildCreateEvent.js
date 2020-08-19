@@ -14,12 +14,12 @@ module.exports = class GuildCreateEvent extends BaseEvent {
       });
 
       // when the bor join a server send this message to the console
-      console.log(`The ( ${client.user.tag} ) has join to this server( ${guild} ). Saved to DB `);
+      console.log(`The ( ${client.user.tag} ) has join to this server( ${guild} ) [ ${guild.id} ] with this owner [ ${guild.owner} ]. Saved to DB `);
 
       // when the bor join a server send this message to the bot's server (djvaggos)
       let myGuild = client.guilds.cache.get("744507395547332638");
       let memberCountChannel = myGuild.channels.cache.get("744515528105656331");
-      memberCountChannel.send(`The ( ${client.user.tag} ) has join to this server( ${guild} ) [ ${guild.id} ]`)
+      memberCountChannel.send(`The ( ${client.user.tag} ) has join to this server( ${guild} ) [ ${guild.id} ] with this owner [ ${guild.owner} ]`)
 
     } catch ( err ) {
     console.log( err );
