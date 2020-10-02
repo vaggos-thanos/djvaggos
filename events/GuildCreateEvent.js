@@ -25,12 +25,12 @@ module.exports = class GuildCreateEvent extends BaseEvent {
 
 
       guild.channels.cache.filter(c => c.type === "text" && c.permissionsFor(client.user).has(["VIEW_CHANNEL", "SEND_MESSAGES"])).first().send(`thanks for adding me`)
-      var channel2 = guild.channels.cache.filter(c => c.type === "text" && c.permissionsFor(client.user).has(["VIEW_CHANNEL", "SEND_MESSAGES"])).first();
-      const discordLINK = 'https://discord.gg/';
-      const memberCountChannel2 = myGuild.channels.cache.get('745620781840466070');
-      channel2.createInvite()
-      .then(invite => memberCountChannel2.send(`The [ ${client.user.tag} ] join to this server here is an invte link [ ${discordLINK + invite.code} ]`))
-      .catch(console.error);
+      //var channel2 = guild.channels.cache.filter(c => c.type === "text" && c.permissionsFor(client.user).has(["VIEW_CHANNEL", "SEND_MESSAGES"])).first();
+      //const discordLINK = 'https://discord.gg/';
+      //const memberCountChannel2 = myGuild.channels.cache.get('745620781840466070');
+     // channel2.createInvite()
+      //.then(invite => memberCountChannel2.send(`The [ ${client.user.tag} ] join to this server here is an invte link [ ${discordLINK + invite.code} ]`))
+      //.catch(console.error);
 
     } catch ( err ) {
     console.log( err );
