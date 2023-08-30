@@ -16,7 +16,7 @@
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.6",
     "lyrics-finder": "^21.2.3",
-    "mongoose": "^5.10.0",
+    "mongoose": "^5.13.20",
     "nodemon": "^2.0.4",
     "opusscript": "0.0.7",
     "simple-youtube-api": "^5.2.1",
